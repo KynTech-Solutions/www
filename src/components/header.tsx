@@ -1,7 +1,7 @@
 import { ToggleModeButton } from "@/components/toggle-mode-button"
 import { Button } from "@/components/ui/button"
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer"
 import { AlignLeft } from "lucide-react"
-import { Drawer, DrawerTrigger, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerFooter, DrawerClose } from "./ui/drawer"
 import Link from "next/link"
 
 const linksArray = [
