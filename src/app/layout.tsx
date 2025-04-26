@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 
+import { Header } from "@/components/header"
 import { ThemeProvider } from "@/context/theme-context"
 
 import "./globals.css"
@@ -20,6 +21,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 		<html lang="pt-BR" suppressHydrationWarning>
 			<body className={`${inter.className} antialiased`}>
 				<ThemeProvider attribute="class" defaultTheme="dark">
+					<Header />
 					<main className="container mx-auto px-4">{children}</main>
 				</ThemeProvider>
 			</body>
