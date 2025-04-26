@@ -1,8 +1,9 @@
+import { AlignLeft } from "lucide-react"
+import Link from "next/link"
+
 import { ToggleModeButton } from "@/components/toggle-mode-button"
 import { Button } from "@/components/ui/button"
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer"
-import { AlignLeft } from "lucide-react"
-import Link from "next/link"
 
 const linksArray = [
 	{ text: "Como funciona", href: "como-funciona" },
