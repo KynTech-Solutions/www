@@ -1,10 +1,11 @@
-import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
+import { Button } from "@/components/ui/button"
+
 export const Hero = () => (
-	<section className="mt-[30px] lg:mt-[80px] min-h-[530px] relative lg:h-[calc(100vh-300px)]">
-		<div className="flex flex-col">
+	<div className="lg:grid lg:grid-cols-2 mt-7.5 lg:mt-[80px] min-h-[530px]">
+		<section className="flex flex-col">
 			<Button variant="outline" className="rounded-full border-border gap-x-1 w-fit group px-3 py-1" asChild>
 				<Link href="/">
 					<span className="font-mono text-xs font-medium">Fale com um especialista</span>
@@ -16,17 +17,22 @@ export const Hero = () => (
 				Sites sob medida, Aplicativos personalizados, Integração de dados, Design impactante & Equipe tech feita para transformar sua Ideia em realidade.
 			</h2>
 
-			<div className="mt-8 md:mt-10">
-				<div className="flex items-center space-x-4">
-					<Button variant="secondary" className="h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]">
-						Saiba mais
-					</Button>
+			<div className="flex items-center space-x-4 mt-8 md:mt-10">
+				<Button variant="secondary" className="h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]">
+					Saiba mais
+				</Button>
 
-					<Button className="h-11 px-5">Start free trial</Button>
-				</div>
+				<Button className="h-11 px-5">Start free trial</Button>
 			</div>
 
 			<p className="text-xs text-[#707070] mt-4 font-mono">100% personalizado e Suporte Contínuo</p>
-		</div>
-	</section>
+		</section>
+
+		<section className="hidden -mt-20 lg:flex lg:flex-col lg:items-center lg:justify-center lg:mx-auto">
+			<h1 className="font-thin text-7xl uppercase">Kyntech</h1>
+			<h2 className="font-light text-xl text-[#878787]">
+				Transformando <span className="font-normal text-white">ideias</span> em grandes <span className="font-normal text-white">negócios</span>.
+			</h2>
+		</section>
+	</div>
 )
