@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "motion/react"
+import { motion, type HTMLMotionProps } from "motion/react"
 import type { ComponentProps } from "react"
 
 // Variants reutilizáveis
@@ -34,9 +34,16 @@ const iconVariants = {
 }
 
 // SectionContainer
-export const SectionContainer = ({ children, className }: ComponentProps<"section">) => {
+export const SectionContainer = ({ children, className, ...props }: HTMLMotionProps<"section">) => {
 	return (
-		<motion.section className={className} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={containerVariants}>
+		<motion.section
+			className={className}
+			initial="hidden"
+			whileInView="visible"
+			viewport={{ once: true, margin: "-100px" }}
+			variants={containerVariants}
+			{...props}
+		>
 			{children}
 		</motion.section>
 	)
