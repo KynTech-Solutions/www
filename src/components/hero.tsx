@@ -8,7 +8,7 @@ export const Hero = () => (
 		<section className="flex flex-col">
 			<Button variant="outline" className="rounded-full border-border gap-x-1 w-fit group px-3 py-1" asChild>
 				<Link href="/">
-					<span className="font-mono text-xs font-medium">Fale com um especialista</span>
+					<span className="font-mono text-xs font-medium">Agende sua consultoria grátis</span>
 					<ArrowRight className="size-4 transition group-hover:translate-x-1" />
 				</Link>
 			</Button>
@@ -18,11 +18,11 @@ export const Hero = () => (
 			</h2>
 
 			<div className="flex items-center space-x-4 mt-8 md:mt-10">
-				<Button variant="secondary" className="h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]">
-					Saiba mais
+				<Button variant="secondary" className="h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]" asChild>
+					<Link href="#como-funciona">Veja nosso processo</Link>
 				</Button>
 
-				<Button className="h-11 px-5">Start free trial</Button>
+				<Button className="h-11 px-5">Peça seu orçamento</Button>
 			</div>
 
 			<p className="text-xs text-[#707070] mt-4 font-mono">100% personalizado e Suporte Contínuo</p>
