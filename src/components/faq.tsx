@@ -37,7 +37,7 @@ const faqQuestionsArray = [
 ]
 
 export const FAQ = () => (
-	<section className="flex flex-col md:grid md:grid-cols-2 md:gap-x-5">
+	<section className="flex flex-col gap-y-3 md:grid md:grid-cols-2 md:gap-x-5">
 		<div className="flex flex-col justify-center">
 			<p className="text-xl md:text-5xl uppercase font-semibold text-center">FAQ</p>
 			<p className="text-base md:text-lg text-[#878787] text-center">Respostas diretas para as perguntas mais comuns que recebemos.</p>
@@ -46,8 +46,8 @@ export const FAQ = () => (
 		<Accordion type="single" collapsible className="w-full">
 			{faqQuestionsArray.map(({ id, answer, question }) => (
 				<AccordionItem key={id} value={`item-${id}`}>
-					<AccordionTrigger className="text-lg cursor-pointer">{question}</AccordionTrigger>
-					<AccordionContent className="text-[#878787] text-md">{answer}</AccordionContent>
+					<AccordionTrigger className="text-base md:text-lg cursor-pointer">{question}</AccordionTrigger>
+					<AccordionContent className="text-[#878787] text-base">{answer}</AccordionContent>
 				</AccordionItem>
 			))}
 		</Accordion>
