@@ -17,12 +17,12 @@ export const Hero = () => (
 				Sites sob medida, Aplicativos personalizados, Integração de dados, Design impactante & Equipe tech feita para transformar sua Ideia em realidade.
 			</h2>
 
-			<div className="flex items-center space-x-4 mt-8 md:mt-10">
-				<Button variant="secondary" className="h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]" asChild>
+			<div className="flex flex-col-reverse md:flex-row items-center gap-x-4 gap-y-2 mt-8 md:mt-10">
+				<Button variant="secondary" className="w-full md:w-fit h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]" asChild>
 					<Link href="#como-funciona">Veja nosso processo</Link>
 				</Button>
 
-				<Button className="h-11 px-5">Peça seu orçamento</Button>
+				<Button className="w-full md:w-fit h-11 px-5">Peça seu orçamento</Button>
 			</div>
 
 			<p className="text-xs text-[#707070] mt-4 font-mono">100% personalizado e Suporte Contínuo</p>
