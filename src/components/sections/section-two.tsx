@@ -1,4 +1,5 @@
 import { Check, Code2, LayoutPanelLeft, Smartphone } from "lucide-react"
+import Link from "next/link"
 import { Button } from "../ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
 import { SectionCardIcon, SectionCardRoot, SectionContainer, SectionContent, SectionDescription, SectionHeader, SectionTitle } from "../ui/section"
@@ -62,7 +63,7 @@ export const SectionTwo = () => {
 
 							<CardFooter>
 								<Button className="w-full hover:scale-105 duration-500" size="lg">
-									{card.cta}
+									<Link href="#contato">{card.cta}</Link>
 								</Button>
 							</CardFooter>
 						</Card>
