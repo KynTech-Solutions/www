@@ -22,7 +22,9 @@ export const Hero = () => (
 					<Link href="#como-funciona">Veja nosso processo</Link>
 				</Button>
 
-				<Button className="w-full md:w-fit h-11 px-5">Peça seu orçamento</Button>
+				<Button className="w-full md:w-fit h-11 px-5" asChild>
+					<Link href="#contato">Peça seu orçamento</Link>
+				</Button>
 			</div>
 
 			<p className="text-xs text-[#707070] mt-4 font-mono">100% personalizado e Suporte Contínuo</p>
