@@ -63,7 +63,7 @@ export const SectionTwo = () => {
 							</CardContent>
 
 							<CardFooter>
-								<Button className="w-full hover:scale-105 duration-500" size="lg">
+								<Button className="w-full hover:scale-105 duration-500" size="lg" asChild>
 									<Link href="#contato">{card.cta}</Link>
 								</Button>
 							</CardFooter>
