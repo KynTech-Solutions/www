@@ -8,7 +8,7 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from 
 const linksArray = [
 	{ text: "Como funciona", href: "como-funciona" },
 	{ text: "Soluções", href: "solucoes" },
-	{ text: "Preços", href: "precos" },
+	// { text: "Preços", href: "precos" },
 	{ text: "Contato", href: "contato" },
 	{ text: "FAQ", href: "faq" }
 ]
