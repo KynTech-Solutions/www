@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 
+import { Footer } from "@/components/footer"
 import { Header } from "@/components/header"
 import { ThemeProvider } from "@/context/theme-context"
 
@@ -23,6 +24,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
 				<ThemeProvider attribute="class" defaultTheme="dark">
 					<Header />
 					<main className="container mx-auto px-4">{children}</main>
+					<Footer />
 				</ThemeProvider>
 			</body>
 		</html>
