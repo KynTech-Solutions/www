@@ -1,8 +1,9 @@
 import { Check, Code2, LayoutPanelLeft, Smartphone } from "lucide-react"
 import Link from "next/link"
-import { Button } from "../ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card"
-import { SectionCardIcon, SectionCardRoot, SectionContainer, SectionContent, SectionDescription, SectionHeader, SectionTitle } from "../ui/section"
+
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { SectionCardIcon, SectionCardRoot, SectionContainer, SectionContent, SectionDescription, SectionHeader, SectionTitle } from "@/components/ui/section"
 
 export const SectionTwo = () => {
 	const solutionsCards = [
