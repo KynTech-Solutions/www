@@ -7,7 +7,7 @@ export const Hero = () => (
 	<div className="lg:grid lg:grid-cols-2 mt-7.5 lg:mt-[80px] min-h-[530px]">
 		<section className="flex flex-col">
 			<Button variant="outline" className="rounded-full border-border gap-x-1 w-fit group px-3 py-1" asChild>
-				<Link href="/">
+				<Link href="#contato">
 					<span className="font-mono text-xs font-medium">Agende sua consultoria grátis</span>
 					<ArrowRight className="size-4 transition group-hover:translate-x-1" />
 				</Link>
