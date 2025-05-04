@@ -10,21 +10,21 @@ export const SectionTwo = () => {
 			description: "Desenvolvidos para conversão, com design exclusivo e tecnologia de ponta.",
 			icon: LayoutPanelLeft,
 			subitems: ["SEO integrado", "100% responsivo", "CMS personalizado"],
-			cta: "Criar Meu Site →"
+			cta: "Criar Meu Site"
 		},
 		{
 			title: "Aplicativos Mobile",
 			description: "Nativos (iOS/Android) ou híbridos: performance premium para seu negócio.",
 			icon: Smartphone,
 			subitems: ["Integração com APIs", "Notificações push", "Offline-first"],
-			cta: "Desenvolver App 🚀"
+			cta: "Desenvolver App"
 		},
 		{
 			title: "Integração de Sistemas",
 			description: "Conecte ERPs, CRMs e ferramentas em um ecossistema único.",
 			icon: Code2,
 			subitems: ["APIs customizadas", "Migração segura", "Sincronização em tempo real"],
-			cta: "Conectar Agora ⚡"
+			cta: "Conectar Agora"
 		}
 	]
 
