@@ -88,7 +88,7 @@ const FormControl = ({ ...props }: React.ComponentProps<typeof Slot>) => {
 const FormDescription = ({ className, ...props }: React.ComponentProps<"p">) => {
 	const { formDescriptionId } = useFormField()
 
-	return <p data-slot="form-description" id={formDescriptionId} className={cn("text-muted-foreground text-sm", className)} {...props} />
+	return <p data-slot="form-description" id={formDescriptionId} className={cn("text-muted-foreground text-xs", className)} {...props} />
 }
 
 const FormMessage = ({ className, ...props }: React.ComponentProps<"p">) => {
