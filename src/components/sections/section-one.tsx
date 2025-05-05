@@ -45,38 +45,36 @@ const stepsArray: {
 	}
 ]
 
-export const SectionOne = () => {
-	return (
-		<SectionContainer id="como-funciona" className="scroll-mt-24">
-			<SectionHeader className="mb-12 text-center">
-				<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7 md:text-center mb-4">Como Funciona</SectionTitle>
+export const SectionOne = () => (
+	<SectionContainer id="como-funciona" className="scroll-mt-24">
+		<SectionHeader className="mb-12 text-center">
+			<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7 md:text-center mb-4">Como Funciona</SectionTitle>
 
-				<SectionDescription className="text-neutral-300 text-center text-lg">
-					Do Seu Briefing ao Software Pronto: Simples, Rápido e Sem Surpresas
-				</SectionDescription>
-			</SectionHeader>
+			<SectionDescription className="text-neutral-300 text-center text-lg">
+				Do Seu Briefing ao Software Pronto: Simples, Rápido e Sem Surpresas
+			</SectionDescription>
+		</SectionHeader>
 
-			<SectionSeparator />
+		<SectionSeparator />
 
-			<SectionContent className="mt-6 flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4">
-				{stepsArray.map(({ icon: Icon, ...card }) => (
-					<SectionCardRoot key={card.id}>
-						<Card className="backdrop-blur-lg h-full bg-[#F2F1EF] dark:bg-[#121212]">
-							<CardHeader className="flex gap-4 pb-2 flex-col">
-								<SectionCardIcon className="bg-muted/45 flex w-11 items-center justify-center rounded-md px-3 py-2">
-									<Icon className="size-6 text-primary" />
-								</SectionCardIcon>
+		<SectionContent className="mt-6 flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4">
+			{stepsArray.map(({ icon: Icon, ...card }) => (
+				<SectionCardRoot key={card.id}>
+					<Card className="backdrop-blur-lg h-full bg-[#F2F1EF] dark:bg-[#121212]">
+						<CardHeader className="flex gap-4 pb-2 flex-col">
+							<SectionCardIcon className="bg-muted/45 flex w-11 items-center justify-center rounded-md px-3 py-2">
+								<Icon className="size-6 text-primary" />
+							</SectionCardIcon>
 
-								<CardTitle className="text-xl">{card.title}</CardTitle>
-							</CardHeader>
+							<CardTitle className="text-xl">{card.title}</CardTitle>
+						</CardHeader>
 
-							<CardContent>
-								<CardDescription className="text-[#878787] leading-relaxed">{card.text}</CardDescription>
-							</CardContent>
-						</Card>
-					</SectionCardRoot>
-				))}
-			</SectionContent>
-		</SectionContainer>
-	)
-}
+						<CardContent>
+							<CardDescription className="text-[#878787] leading-relaxed">{card.text}</CardDescription>
+						</CardContent>
+					</Card>
+				</SectionCardRoot>
+			))}
+		</SectionContent>
+	</SectionContainer>
+)
