@@ -5,31 +5,31 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionCardIcon, SectionCardRoot, SectionContainer, SectionContent, SectionDescription, SectionHeader, SectionTitle } from "@/components/ui/section"
 
-export const SectionTwo = () => {
-	const solutionsCards = [
-		{
-			title: "Sites Sob Medida",
-			description: "Desenvolvidos para conversão, com design exclusivo e tecnologia de ponta.",
-			icon: LayoutPanelLeft,
-			subitems: ["SEO integrado", "100% responsivo", "CMS personalizado"],
-			cta: "Criar Meu Site"
-		},
-		{
-			title: "Aplicativos Mobile",
-			description: "Nativos (iOS/Android) ou híbridos: performance premium para seu negócio.",
-			icon: Smartphone,
-			subitems: ["Integração com APIs", "Notificações push", "Offline-first"],
-			cta: "Desenvolver App"
-		},
-		{
-			title: "Integração de Sistemas",
-			description: "Conecte ERPs, CRMs e ferramentas em um ecossistema único.",
-			icon: Code2,
-			subitems: ["APIs customizadas", "Migração segura", "Sincronização em tempo real"],
-			cta: "Conectar Agora"
-		}
-	]
+const solutionsCards = [
+	{
+		title: "Sites Sob Medida",
+		description: "Desenvolvidos para conversão, com design exclusivo e tecnologia de ponta.",
+		icon: LayoutPanelLeft,
+		subitems: ["SEO integrado", "100% responsivo", "CMS personalizado"],
+		cta: "Criar Meu Site"
+	},
+	{
+		title: "Aplicativos Mobile",
+		description: "Nativos (iOS/Android) ou híbridos: performance premium para seu negócio.",
+		icon: Smartphone,
+		subitems: ["Integração com APIs", "Notificações push", "Offline-first"],
+		cta: "Desenvolver App"
+	},
+	{
+		title: "Integração de Sistemas",
+		description: "Conecte ERPs, CRMs e ferramentas em um ecossistema único.",
+		icon: Code2,
+		subitems: ["APIs customizadas", "Migração segura", "Sincronização em tempo real"],
+		cta: "Conectar Agora"
+	}
+]
 
+export const SectionTwo = () => {
 	return (
 		<SectionContainer id="solucoes" className="scroll-mt-24">
 			<SectionHeader className="mb-12 text-center">
