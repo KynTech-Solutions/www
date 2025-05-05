@@ -49,9 +49,9 @@ export const SectionTwo = () => (
 			</SectionDescription>
 		</SectionHeader>
 
-		<SectionContent className="mt-10 grid md:grid-cols-3 gap-6">
+		<SectionContent className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-6">
 			{solutionsCardsArray.map(({ icon: Icon, subitems, ...card }) => (
-				<SectionCardRoot key={card.id}>
+				<SectionCardRoot key={card.id} className="first:md:mx-auto first:md:col-span-2 first:lg:m-0 first:lg:col-span-1">
 					<Card key={card.title} className="relative hover:shadow-lg transition-shadow pt-10 gap-0 justify-between h-full">
 						<CardHeader className="">
 							<SectionCardIcon className="bg-neutral-800 absolute -top-8 left-1/2 -translate-x-1/2 flex size-16 items-center justify-center rounded-full p-3">
