@@ -45,7 +45,7 @@ const stepsArray: {
 	}
 ]
 
-export const SectionOne = () => (
+export const HowWorkSection = () => (
 	<SectionContainer id="como-funciona" className="scroll-mt-24">
 		<SectionHeader className="mb-12 text-center">
 			<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7 md:text-center mb-4">Como Funciona</SectionTitle>
