@@ -13,39 +13,39 @@ import {
 	SectionTitle
 } from "@/components/ui/section"
 
-export const SectionOne = () => {
-	const cardsArray: {
-		id: number
-		title: string
-		text: string
-		icon: ElementType
-	}[] = [
-		{
-			id: 0,
-			title: "1. Consultoria",
-			text: "Conversaremos para detalhar seu projeto: objetivos, público-alvo e funcionalidades.",
-			icon: MessageSquareText
-		},
-		{
-			id: 1,
-			title: "2. Protótipo Realista(MVP)",
-			text: "Desenvolveremos um protótipo interativo da sua ideia, validando design e funcionalidades.",
-			icon: DraftingCompass
-		},
-		{
-			id: 2,
-			title: "3. Codificamos com Tecnologia de Ponta",
-			text: "Seu projeto é desenvolvido em etapas, com testes rigorosos de usabilidade, segurança e desempenho. Você acompanha cada fase em tempo real.",
-			icon: Code2
-		},
-		{
-			id: 3,
-			title: "4. Lançamento e Evolução Contínua",
-			text: "Entregaremos o projeto pronto para uso, com hospedagem, domínio e treinamento. Oferecemos suporte técnico e atualizações conforme sua demanda cresce.",
-			icon: Rocket
-		}
-	]
+const cardsArray: {
+	id: number
+	title: string
+	text: string
+	icon: ElementType
+}[] = [
+	{
+		id: 0,
+		title: "1. Consultoria",
+		text: "Conversaremos para detalhar seu projeto: objetivos, público-alvo e funcionalidades.",
+		icon: MessageSquareText
+	},
+	{
+		id: 1,
+		title: "2. Protótipo Realista(MVP)",
+		text: "Desenvolveremos um protótipo interativo da sua ideia, validando design e funcionalidades.",
+		icon: DraftingCompass
+	},
+	{
+		id: 2,
+		title: "3. Codificamos com Tecnologia de Ponta",
+		text: "Seu projeto é desenvolvido em etapas, com testes rigorosos de usabilidade, segurança e desempenho. Você acompanha cada fase em tempo real.",
+		icon: Code2
+	},
+	{
+		id: 3,
+		title: "4. Lançamento e Evolução Contínua",
+		text: "Entregaremos o projeto pronto para uso, com hospedagem, domínio e treinamento. Oferecemos suporte técnico e atualizações conforme sua demanda cresce.",
+		icon: Rocket
+	}
+]
 
+export const SectionOne = () => {
 	return (
 		<SectionContainer id="como-funciona" className="scroll-mt-24">
 			<SectionHeader className="mb-12 text-center">
