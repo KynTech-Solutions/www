@@ -1,3 +1,6 @@
+import { Code2, DraftingCompass, MessageSquareText, Rocket } from "lucide-react"
+import type { ElementType } from "react"
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
 	SectionCardIcon,
@@ -9,8 +12,6 @@ import {
 	SectionSeparator,
 	SectionTitle
 } from "@/components/ui/section"
-import { Code2, DraftingCompass, MessageSquareText, Rocket } from "lucide-react"
-import type { ElementType } from "react"
 
 export const SectionOne = () => {
 	const cardsArray: {
