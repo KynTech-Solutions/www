@@ -79,7 +79,7 @@ export const SectionDescription = ({ children, className }: ComponentProps<"p">)
 // SectionSeparator
 export const SectionSeparator = () => (
 	<motion.div
-		className="hidden sm:block h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent my-8"
+		className="h-[2px] bg-gradient-to-r from-transparent via-primary to-transparent my-8"
 		initial={{ scaleX: 0 }}
 		whileInView={{ scaleX: 1 }}
 		transition={{ duration: 2 }}
