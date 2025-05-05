@@ -6,8 +6,8 @@ export const ContactSection = () => (
 		<SectionHeader className="mb-6 text-center">
 			<SectionTitle className="font-semibold text-xl sm:text-3xl tracking-tighter leading-7 sm:mb-4">Solicite sua proposta</SectionTitle>
 
-			<SectionDescription className="text-neutral-300 text-center sm:text-lg">
-				Preencha os campos abaixo e um especialista entrará em contato em até <strong>2 horas</strong>.
+			<SectionDescription className="text-[#878787] text-center sm:text-lg">
+				Preencha os campos abaixo e um especialista entrará em contato em até <span className="text-white font-semibold">2 horas</span>.
 			</SectionDescription>
 		</SectionHeader>
 
