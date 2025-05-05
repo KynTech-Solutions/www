@@ -40,7 +40,7 @@ const solutionsCardsArray: {
 	}
 ]
 
-export const SectionTwo = () => (
+export const SolutionsSection = () => (
 	<SectionContainer id="solucoes" className="scroll-mt-24">
 		<SectionHeader className="mb-12 text-center">
 			<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7 md:text-center mb-4">Soluções que Impulsionam Negócios</SectionTitle>
