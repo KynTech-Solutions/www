@@ -13,7 +13,7 @@ import {
 	SectionTitle
 } from "@/components/ui/section"
 
-const cardsArray: {
+const stepsArray: {
 	id: number
 	title: string
 	text: string
@@ -59,7 +59,7 @@ export const SectionOne = () => {
 			<SectionSeparator />
 
 			<SectionContent className="mt-6 flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4">
-				{cardsArray.map(({ icon: Icon, ...card }) => (
+				{stepsArray.map(({ icon: Icon, ...card }) => (
 					<SectionCardRoot key={card.id}>
 						<Card className="backdrop-blur-lg h-full bg-[#F2F1EF] dark:bg-[#121212]">
 							<CardHeader className="flex gap-4 pb-2 flex-col">
