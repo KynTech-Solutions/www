@@ -1,12 +1,21 @@
 import { Check, Code2, LayoutPanelLeft, Smartphone } from "lucide-react"
+import type { ElementType } from "react"
 import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { SectionCardIcon, SectionCardRoot, SectionContainer, SectionContent, SectionDescription, SectionHeader, SectionTitle } from "@/components/ui/section"
 
-const solutionsCards = [
+const solutionsCards: {
+	id: number
+	title: string
+	description: string
+	icon: ElementType
+	subitems: string[]
+	cta: string
+}[] = [
 	{
+		id: 1,
 		title: "Sites Sob Medida",
 		description: "Desenvolvidos para conversão, com design exclusivo e tecnologia de ponta.",
 		icon: LayoutPanelLeft,
@@ -14,6 +23,7 @@ const solutionsCards = [
 		cta: "Criar Meu Site"
 	},
 	{
+		id: 2,
 		title: "Aplicativos Mobile",
 		description: "Nativos (iOS/Android) ou híbridos: performance premium para seu negócio.",
 		icon: Smartphone,
@@ -21,6 +31,7 @@ const solutionsCards = [
 		cta: "Desenvolver App"
 	},
 	{
+		id: 3,
 		title: "Integração de Sistemas",
 		description: "Conecte ERPs, CRMs e ferramentas em um ecossistema único.",
 		icon: Code2,
