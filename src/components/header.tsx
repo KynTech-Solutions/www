@@ -18,7 +18,7 @@ export const Header = () => (
 		<div className="container mx-auto px-4 lg:px-8 py-4 flex justify-between items-center">
 			<Drawer>
 				<DrawerTrigger asChild>
-					<Button variant="ghost" size="icon" className="lg:hidden">
+					<Button variant="ghost" size="icon" className="lg:hidden" aria-label="Menu">
 						<AlignLeft className="size-6" />
 					</Button>
 				</DrawerTrigger>
@@ -41,7 +41,7 @@ export const Header = () => (
 				</DrawerContent>
 			</Drawer>
 
-			<h1 className="font-thin text-2xl uppercase tracking-widest">Kyntech</h1>
+			<h1 className="font-extralight dark:font-thin text-2xl uppercase tracking-widest">Kyntech</h1>
 
 			<ToggleModeButton variant="ghost" className="lg:hidden" />
 
