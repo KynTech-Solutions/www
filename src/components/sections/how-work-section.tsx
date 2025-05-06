@@ -47,11 +47,15 @@ const stepsArray: {
 
 export const HowWorkSection = () => (
 	<SectionContainer id="como-funciona" className="scroll-mt-24">
-		<SectionHeader className="mb-12 text-center">
-			<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7 md:text-center mb-4">Como Funciona</SectionTitle>
+		<SectionHeader
+			className="
+		text-center space-y-2"
+		>
+			<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7">Como Funciona</SectionTitle>
 
-			<SectionDescription className="text-neutral-300 text-center text-lg">
-				Do Seu Briefing ao Software Pronto: Simples, Rápido e Sem Surpresas
+			<SectionDescription className="text-neutral-500 dark:text-neutral-300 text-base text-nowrap">
+				Do Seu Briefing ao Software Pronto. <br className="sm:hidden" />
+				Simples, Rápido e Sem Surpresas
 			</SectionDescription>
 		</SectionHeader>
 
@@ -60,9 +64,9 @@ export const HowWorkSection = () => (
 		<SectionContent className="mt-6 flex flex-col gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4">
 			{stepsArray.map(({ icon: Icon, ...card }) => (
 				<SectionCardRoot key={card.id}>
-					<Card className="backdrop-blur-lg h-full bg-[#F2F1EF] dark:bg-[#121212]">
-						<CardHeader className="flex gap-4 pb-2 flex-col">
-							<SectionCardIcon className="bg-muted/45 flex w-11 items-center justify-center rounded-md px-3 py-2">
+					<Card className="backdrop-blur-lg h-full bg-card dark:bg-[#121212] gap-4">
+						<CardHeader className="flex gap-3 flex-col">
+							<SectionCardIcon className="bg-card-foreground/10 dark:bg-muted/45 flex w-11 items-center justify-center rounded-md px-3 py-2">
 								<Icon className="size-6 text-primary" />
 							</SectionCardIcon>
 
@@ -70,7 +74,7 @@ export const HowWorkSection = () => (
 						</CardHeader>
 
 						<CardContent>
-							<CardDescription className="text-[#878787] leading-relaxed">{card.text}</CardDescription>
+							<CardDescription className="text-primary-gray leading-relaxed">{card.text}</CardDescription>
 						</CardContent>
 					</Card>
 				</SectionCardRoot>
