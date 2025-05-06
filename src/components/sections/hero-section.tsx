@@ -13,12 +13,12 @@ export const Hero = () => (
 				</Link>
 			</Button>
 
-			<h2 className="mt-6 md:mt-10 max-w-[580px] text-[#878787] leading-tight text-[24px] md:text-[36px] font-medium">
+			<h2 className="mt-6 md:mt-10 max-w-[580px] text-primary-gray leading-tight text-[24px] md:text-[36px] font-medium">
 				Sites sob medida, Aplicativos personalizados, Integração de dados, Design impactante & Equipe tech feita para transformar sua Ideia em realidade.
 			</h2>
 
 			<div className="flex flex-col-reverse md:flex-row items-center gap-x-4 gap-y-2 mt-8 md:mt-10">
-				<Button variant="secondary" className="w-full md:w-fit h-11 px-6 dark:bg-[#1D1D1D] bg-[#F2F1EF]" asChild>
+				<Button variant="secondary" className="w-full md:w-fit h-11 px-6 dark:bg-[#1D1D1D] bg-white ring-2 ring-border dark:ring-0" asChild>
 					<Link href="#como-funciona">Veja nosso processo</Link>
 				</Button>
 
@@ -27,13 +27,14 @@ export const Hero = () => (
 				</Button>
 			</div>
 
-			<p className="text-xs text-[#707070] mt-4 font-mono">100% personalizado e Suporte Contínuo</p>
+			<p className="text-xs text-primary-gray mt-4 font-mono">100% personalizado e Suporte Contínuo</p>
 		</section>
 
 		<section className="hidden -mt-20 lg:flex lg:flex-col lg:items-center lg:justify-center lg:mx-auto">
 			<h1 className="font-thin text-7xl uppercase">Kyntech</h1>
 			<h2 className="font-light text-xl text-[#878787]">
-				Transformando <span className="font-normal text-white">ideias</span> em grandes <span className="font-normal text-white">negócios</span>.
+				Transformando <span className="font-normal text-black dark:text-white underline">ideias</span> em grandes{" "}
+				<span className="font-normal text-black dark:text-white underline">negócios</span>.
 			</h2>
 		</section>
 	</div>
