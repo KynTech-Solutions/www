@@ -5,8 +5,7 @@ import { HighlightsSection } from "@/components/sections/highlights-section"
 import { HowWorkSection } from "@/components/sections/how-work-section"
 import { SolutionsSection } from "@/components/sections/solutions-section"
 
-const Home = () => {
-	return (
+const Home = () => (
 		<>
 			<Hero />
 
@@ -22,7 +21,6 @@ const Home = () => {
 				<FAQ />
 			</div>
 		</>
-	)
-}
+)
 
 export default Home
