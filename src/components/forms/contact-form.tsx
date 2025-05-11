@@ -66,7 +66,7 @@ export const ContactForm = () => {
 							<FormControl>
 								<Input placeholder="Ex: Maria Souza (CEO da Maria Company)" {...field} />
 							</FormControl>
-							<FormDescription>Usaremos para personalizar sua proposta</FormDescription>
+							<FormDescription className="text-foreground/60 dark:text-muted-foreground">Usaremos para personalizar sua proposta</FormDescription>
 							<FormMessage />
 						</FormItem>
 					)}
@@ -81,7 +81,7 @@ export const ContactForm = () => {
 							<FormControl>
 								<Input placeholder="contato@empresa.com" {...field} />
 							</FormControl>
-							<FormDescription>Enviaremos a proposta detalhada e sem spam.</FormDescription>
+							<FormDescription className="text-foreground/60 dark:text-muted-foreground">Enviaremos a proposta detalhada e sem spam.</FormDescription>
 							<FormMessage />
 						</FormItem>
 					)}
@@ -103,7 +103,7 @@ export const ContactForm = () => {
 									}}
 								/>
 							</FormControl>
-							<FormDescription>Respostas em 15 minutos</FormDescription>
+							<FormDescription className="text-foreground/60 dark:text-muted-foreground">Respostas em 15 minutos</FormDescription>
 							<FormMessage />
 						</FormItem>
 					)}
@@ -118,7 +118,7 @@ export const ContactForm = () => {
 							<FormControl>
 								<Textarea rows={5} className="resize-none h-28" placeholder={`Ex: "App para delivery de medicamentos com integração em farmácias`} {...field} />
 							</FormControl>
-							<FormDescription>Seja breve - depois detalhamos juntos</FormDescription>
+							<FormDescription className="text-foreground/60 dark:text-muted-foreground">Seja breve - depois detalhamos juntos</FormDescription>
 							<FormMessage />
 						</FormItem>
 					)}
