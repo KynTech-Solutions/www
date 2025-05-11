@@ -44,7 +44,7 @@ export const SolutionsSection = () => (
 	<SectionContainer id="solucoes" className="scroll-mt-24">
 		<SectionHeader className="mb-12 text-center">
 			<SectionTitle className="font-semibold text-3xl tracking-tighter leading-7 md:text-center mb-4">Soluções que Impulsionam Negócios</SectionTitle>
-			<SectionDescription className="text-neutral-300 text-center text-lg">
+			<SectionDescription className="text-neutral-500 dark:text-neutral-300 text-center text-lg">
 				Tecnologia personalizada para escalar sua operação, engajar clientes e automatizar processos.
 			</SectionDescription>
 		</SectionHeader>
