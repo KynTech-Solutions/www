@@ -52,11 +52,13 @@ export const SolutionsSection = () => (
 		<SectionContent className="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-6">
 			{solutionsCardsArray.map(({ icon: Icon, subitems, ...card }) => (
 				<SectionCardRoot key={card.id} className="first:md:mx-auto first:md:col-span-2 first:lg:m-0 first:lg:col-span-1">
-					<Card key={card.title} className="relative hover:shadow-lg transition-shadow pt-10 gap-0 justify-between h-full">
+					<Card key={card.title} className="relative hover:shadow-lg transition-shadow pt-10 gap-0 justify-between h-full bg-card dark:bg-[#121212]">
 						<CardHeader className="">
-							<SectionCardIcon className="bg-neutral-800 absolute -top-8 left-1/2 -translate-x-1/2 flex size-16 items-center justify-center rounded-full p-3">
-								<Icon className="size-8" />
-							</SectionCardIcon>
+							<div className="bg-background absolute -top-8 left-1/2 -translate-x-1/2 rounded-full size-fit">
+								<SectionCardIcon className="bg-card-foreground/10 dark:bg-neutral-800 flex size-16 items-center justify-center rounded-full p-3">
+									<Icon className="size-8 text-primary" />
+								</SectionCardIcon>
+							</div>
 							<CardTitle className="text-center">{card.title}</CardTitle>
 						</CardHeader>
 
