@@ -32,7 +32,7 @@ export const Hero = () => (
 
 		<section className="hidden -mt-20 lg:flex lg:flex-col lg:items-center lg:justify-center lg:mx-auto">
 			<h1 className="font-thin text-7xl uppercase">Kyntech</h1>
-			<h2 className="font-light text-xl text-[#878787]">
+			<h2 className="font-light text-xl text-primary-gray">
 				Transformando <span className="font-normal text-black dark:text-white underline">ideias</span> em grandes{" "}
 				<span className="font-normal text-black dark:text-white underline">negócios</span>.
 			</h2>
