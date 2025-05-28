@@ -14,11 +14,7 @@ export const ContactForm = () => {
 		name: z.string().min(1, "Nome é obrigatório").max(150, "Máx: 150 caracteres"),
 		email: z.string().email("Email inválido").max(150, "Máx: 150 caracteres"),
 		phone: z.string().optional(),
-		idea: z
-			.string()
-			.max(750, "Máx: 750 caracteres")
-			.transform((val) => (val.trim() === "" ? undefined : val))
-			.optional()
+		idea: z.string().max(750, "Máx: 750 caracteres").optional()
 	})
 
 	type ContactFormSchema = z.infer<typeof contactFormSchema>
