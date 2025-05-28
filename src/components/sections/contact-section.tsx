@@ -11,7 +11,7 @@ export const ContactSection = () => (
 			</SectionDescription>
 		</SectionHeader>
 
-		<SectionContent className="md:grid md:grid-cols-2 md:gap-x-8 border border-border px-4 py-6 md:px-8 bg-foreground/10 dark:bg-[#121212]">
+		<SectionContent className="md:grid md:grid-cols-2 md:gap-x-8 border border-border px-4 py-6 md:px-8 bg-foreground/15 dark:bg-[#121212]">
 			<ContactForm />
 
 			<div className="hidden md:flex flex-col justify-center items-center">
