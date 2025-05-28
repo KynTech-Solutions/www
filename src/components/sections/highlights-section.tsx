@@ -6,9 +6,9 @@ import { SectionSeparator } from "@/components/ui/section"
 export const HighlightsSection = () => (
 	<>
 		<SectionSeparator />
-		<section className="border border-border text-center md:mx-auto px-2 py-10 md:px-24 md:py-20 flex items-center flex-col bg-[#F2F1EF] dark:bg-[#121212]">
+		<section className="border border-border text-center md:mx-auto px-2 py-10 md:px-24 md:py-20 flex items-center flex-col bg-foreground/15 dark:bg-[#121212]">
 			<span className="text-4xl	md:text-8xl font-thin tracking-widest uppercase">Kyntech</span>
-			<p className="text-[#878787] mt-4 md:mt-6 text-pretty">
+			<p className="text-foreground/60 mt-4 md:mt-6 text-pretty">
 				Sites sob medida, Aplicativos personalizados, Integração de dados, Design impactante & Equipe tech feita para transformar sua <br /> Ideia em realidade.
 			</p>
 
